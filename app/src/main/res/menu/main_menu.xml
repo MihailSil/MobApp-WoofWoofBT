@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/about"
+                    android:icon="@drawable/profile"
+                    android:title="@string/about"
+                />
+                <item android:id="@+id/login"
+                    android:icon="@drawable/baseline_login_24"
+                    android:title="@string/login"
+                />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Settings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/mkd"
+                    android:icon="@drawable/mkd"
+                    android:title="@string/mkd"
+                    />
+                <item android:id="@+id/eng"
+                    android:icon="@drawable/eng"
+                    android:title="@string/eng"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">WoofWoofBitola</string>
+    <string name="button_en">English Language Button</string>
+    <string name="button_mk">Macedonian Language Button</string>
+    <string name="button_view_all_dogs">View All Dogs</string>
+    <string name="button_report_unchipped_dogs">Report Unchipped Dogs</string>
+    <string name="button_lost_dogs">Lost Dogs</string>
+    <string name="button_report_lost_dogs">Report Lost Dogs</string>
+    <string name="button_donate">Donate</string>
+
+    <string name="eng">English</string>
+    <string name="mkd">Macedonian</string>
+    <string name="about">About</string>
+    <string name="login">Log In</string>
+
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
 </resources>

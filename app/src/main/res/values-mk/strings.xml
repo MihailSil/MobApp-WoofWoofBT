@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WoofWoofBitola</string>
+    <string name="button_en">English Language Button</string>
+    <string name="button_mk">Macedonian Language Button</string>
+    <string name="button_view_all_dogs">Преглед на сите кучиња</string>
+    <string name="button_report_unchipped_dogs">Пријави нечипирано куче</string>
+    <string name="button_lost_dogs">Изгубени кучиња</string>
+    <string name="button_report_lost_dogs">Пријави загубено куче</string>
+    <string name="button_donate">Донирај</string>
+
+    <string name="eng">Англиски</string>
+    <string name="mkd">Македонски</string>
+    <string name="about">За</string>
+    <string name="login">Најава</string>
+
+    <string name="open">Отвори Навигација</string>
+    <string name="close">Затвори Навигација</string>
+</resources>
