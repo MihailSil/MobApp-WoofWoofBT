@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     ActionBarDrawerToggle drawerToggle;
     private Button button1;
+    private Button button2;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
@@ -46,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 openActivityAllDogs();
             }
+        });
+
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openActivityReportUnchippedDogs();}
         });
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -78,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivityAllDogs(){
         Intent intent = new Intent(this, ActivityAllDogs.class);
+        startActivity(intent);
+    }
+
+    public void openActivityReportUnchippedDogs(){
+        Intent intent = new Intent(this, ActivityReportUnchippedDogs.class);
         startActivity(intent);
     }
 }

@@ -15,4 +15,35 @@
 
     <string name="open">Open Navigation Drawer</string>
     <string name="close">Close Navigation Drawer</string>
+
+    <string name="dog_id048">ID: 048</string>
+    <string name="dog_name048">Name: Marko</string>
+    <string name="dog_info48">Information: Marko is very playful and enjoys chasing his tail. He’s quite the entertainer. He has a big appetite and enjoys a variety of foods. However, he has a sensitive stomach, so he’s on a special diet. Marko is very affectionate and loves cuddles. He’s great with children and very gentle.</string>
+    <string name="dog_description048">Marko 048</string>
+
+    <string name="dog_id101">ID: 101</string>
+    <string name="dog_name101">Name: Luna</string>
+    <string name="dog_info101">Information: Luna is playful and loves playing with her favorite ball. She enjoys running and playing in open spaces. Luna is a good eater and enjoys a variety of foods. She especially loves treats. She’s very affectionate and loves attention. Luna is great with children and enjoys the company of other dogs.</string>
+    <string name="dog_description101">Luna 101</string>
+
+    <string name="dog_id102">ID: 102</string>
+    <string name="dog_name102">Name: Laki</string>
+    <string name="dog_info102">Information: Laki is very sleepy dog. He enjoys sleeping next to humans. Laki can’t decide if he likes eating more or sleeping.</string>
+    <string name="dog_description102">Laki 102</string>
+
+    <string name="dog_id200">ID: 200</string>
+    <string name="dog_name200">Name: Jonche</string>
+    <string name="dog_info200">Information: Jonche loves running and playing fetch. He’s very active and needs plenty of exercises to stay happy. Jonche enjoys his meals and is not picky. He loves treats and is always excited at mealtime. He’s very friendly and loves socializing with other dogs. He’s also very protective of his family.</string>
+    <string name="dog_description200">Jonche 200</string>
+
+    <string name="dog_id126">ID: 126</string>
+    <string name="dog_name126">Name: Lea</string>
+    <string name="dog_info126">Information: Lea is playful but also enjoys her quiet time. She likes puzzle toys and short play sessions. She’s not a big eater and can be a bit finicky. She prefers wet food over dry kibble. Lea is very friendly and loves being around people. She’s a bit shy around new dogs but warms up quickly.</string>
+    <string name="dog_description126">Lea 126</string>
+
+    <string name="dog_id201">ID: 201</string>
+    <string name="dog_name201">Name: Mile</string>
+    <string name="dog_info201">Information: Mile is very energetic and loves playing catch. He enjoys long walks and playing in the yard. He has a hearty appetite and loves all kinds of food. He needs a balanced diet to maintain his energy levels. Mile is very friendly and loves meeting new people. He’s also very good with kids and other pets.</string>
+    <string name="dog_description201">Mile 201</string>
+
 </resources>

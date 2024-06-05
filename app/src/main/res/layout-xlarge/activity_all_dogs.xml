@@ -1,10 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:textAlignment="center"
     tools:context=".ActivityAllDogs">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ActivityAllDogs">
+
+        <LinearLayout
+            android:id="@+id/a048"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/dog_id048"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_id048"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_name048"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_name048"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_info048"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_info48"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView048"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/a048"
+                android:contentDescription="@string/dog_description048"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/a048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/a101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a048">
+
+            <TextView
+                android:id="@+id/dog_id101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_id101"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_name101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_name101"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_info101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_info101"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView101"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/a101"
+                android:contentDescription="@string/dog_description101"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/a101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/a102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a101">
+
+            <TextView
+                android:id="@+id/dog_id102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_id102"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_name102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_name102"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_info102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_info102"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView102"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/a102"
+                android:contentDescription="@string/dog_description102"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/a102"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/a200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a102">
+
+            <TextView
+                android:id="@+id/dog_id200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_id200"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_name200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_name200"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_info200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_info200"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView200"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/a200"
+                android:contentDescription="@string/dog_description200"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/a200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/a126"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a200">
+
+            <TextView
+                android:id="@+id/dog_id126"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_id126"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_name126"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_name126"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_info126"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_info126"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView126"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/a126"
+                android:contentDescription="@string/dog_description126"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/a126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/a201"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a126">
+
+            <TextView
+                android:id="@+id/dog_id201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_id201"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_name201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_name201"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/dog_info201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dog_info201"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageView201"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/a201"
+                android:contentDescription="@string/dog_description201"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
