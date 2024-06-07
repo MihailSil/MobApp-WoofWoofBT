@@ -6,6 +6,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import java.util.Locale;
+import android.content.res.Resources;
+import android.content.res.Configuration;
+import android.content.SharedPreferences;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -18,6 +22,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
@@ -60,18 +66,24 @@ public class MainActivity extends AppCompatActivity {
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.about){
-                    Toast.makeText(MainActivity.this, "About Selected", Toast.LENGTH_SHORT).show();
-                } else if (item.getItemId() == R.id.login) {
+                if (item.getItemId() == R.id.login) {
                     Toast.makeText(MainActivity.this, "Login Selected", Toast.LENGTH_SHORT).show();
+                } else if (item.getItemId() == R.id.register) {
+                    Toast.makeText(MainActivity.this, "Register Selected", Toast.LENGTH_SHORT).show();
                 } else if (item.getItemId() == R.id.mkd){
+                    setLocale("mk");
                     Toast.makeText(MainActivity.this, "Macedonian Selected", Toast.LENGTH_SHORT).show();
+                    recreate();
+                    return true;
                 } else if (item.getItemId() == R.id.eng){
+                    setLocale("en");
                     Toast.makeText(MainActivity.this, "English Selected", Toast.LENGTH_SHORT).show();
+                    recreate();
+                    return true;
                 }
                 return true;
             }
@@ -91,5 +103,19 @@ public class MainActivity extends AppCompatActivity {
     public void openActivityReportUnchippedDogs(){
         Intent intent = new Intent(this, ActivityReportUnchippedDogs.class);
         startActivity(intent);
+    }
+
+    private void setLocale(String lang) {
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Resources resources = getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
+
+        // Save selected language to preferences for future use
+        SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
+        editor.putString("My_Lang", lang);
+        editor.apply();
     }
 }

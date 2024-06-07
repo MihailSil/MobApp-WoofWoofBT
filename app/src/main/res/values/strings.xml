@@ -12,6 +12,7 @@
     <string name="mkd">Macedonian</string>
     <string name="about">About</string>
     <string name="login">Log In</string>
+    <string name="register">Register</string>
 
     <string name="open">Open Navigation Drawer</string>
     <string name="close">Close Navigation Drawer</string>
@@ -45,5 +46,11 @@
     <string name="dog_name201">Name: Mile</string>
     <string name="dog_info201">Information: Mile is very energetic and loves playing catch. He enjoys long walks and playing in the yard. He has a hearty appetite and loves all kinds of food. He needs a balanced diet to maintain his energy levels. Mile is very friendly and loves meeting new people. He’s also very good with kids and other pets.</string>
     <string name="dog_description201">Mile 201</string>
+
+
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="submit">Submit</string>
 
 </resources>

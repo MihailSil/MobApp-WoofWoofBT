@@ -12,6 +12,7 @@
     <string name="mkd">Македонски</string>
     <string name="about">За</string>
     <string name="login">Најава</string>
+    <string name="register">Регистрирај се</string>
 
     <string name="open">Отвори Навигација</string>
     <string name="close">Затвори Навигација</string>
@@ -45,5 +46,11 @@
     <string name="dog_name201">Име: Миле</string>
     <string name="dog_info201">Информации: Миле е многу енергичен и сака да игра лов. Ужива во долги прошетки и играње во дворот. Има голем апетит и сака секаква храна. Нему му е потребна урамнотежена исхрана за да го одржи нивото на енергија. Миле е многу пријателски расположен и сака да запознава нови луѓе. Тој е многу добар и со деца и други домашни миленици.</string>
     <string name="dog_description201">Миле 201</string>
+
+
+    <string name="enter_location">Внесете Локација</string>
+    <string name="enter_description">Внесете опис</string>
+    <string name="take_photo">Сликај</string>
+    <string name="submit">Поднеси</string>
 
 </resources>

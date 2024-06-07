@@ -17,6 +17,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.woofwoofbitola.data.model.AppDatabase;
+import com.example.woofwoofbitola.data.model.DogReport;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -57,7 +60,7 @@ public class ActivityReportUnchippedDogs extends AppCompatActivity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveDataLocally();
+                saveData();
             }
         });
     }
@@ -79,7 +82,7 @@ public class ActivityReportUnchippedDogs extends AppCompatActivity {
         }
     }
 
-    private void saveDataLocally() {
+    private void saveData() {
         String location = editTextLocation.getText().toString();
         String description = editTextDescription.getText().toString();
 
@@ -88,26 +91,19 @@ public class ActivityReportUnchippedDogs extends AppCompatActivity {
             return;
         }
 
-        String fileName = "unchipped_dog_report_" + System.currentTimeMillis() + ".txt";
         String photoFileName = "unchipped_dog_photo_" + System.currentTimeMillis() + ".jpg";
 
-        try (FileOutputStream fos = openFileOutput(fileName, MODE_PRIVATE)) {
-            fos.write(("Location: " + location + "\n").getBytes());
-            fos.write(("Description: " + description + "\n").getBytes());
-            fos.write(("Photo: " + photoFileName + "\n").getBytes());
-            savePhoto(photo, photoFileName);
+        try (FileOutputStream fos = openFileOutput(photoFileName, MODE_PRIVATE)) {
+            photo.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+
+            DogReport dogReport = new DogReport(location, description, photoFileName);
+            AppDatabase db = AppDatabase.getInstance(this);
+            db.dogReportDao().insert(dogReport);
+
             Toast.makeText(this, "Data saved locally", Toast.LENGTH_SHORT).show();
         } catch (IOException e) {
             e.printStackTrace();
             Toast.makeText(this, "Failed to save data", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void savePhoto(Bitmap bitmap, String fileName) {
-        try (FileOutputStream fos = openFileOutput(fileName, MODE_PRIVATE)) {
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 

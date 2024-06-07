@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -26,9 +27,22 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
+
+    implementation(libs.room.common)
+    val room_version = "2.5.0"
+
+    implementation ("androidx.room:room-runtime:$room_version")
+    ksp("androidx.room:room-compiler:2.5.0")
+
+    // Optional - RxJava2 support for Room
+    implementation ("androidx.room:room-rxjava2:$room_version")
+
+    // Optional - Paging 3 Integration
+    implementation ("androidx.room:room-paging:$room_version")
 
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -40,3 +54,4 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
