@@ -13,6 +13,13 @@
     <string name="about">За</string>
     <string name="login">Најава</string>
     <string name="register">Регистрирај се</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="click_to_login">Притиснете за најава</string>
+    <string name="click_to_register">Притиснете за регистрација</string>
+    <string name="logout">Одјава</string>
+    <string name="profile">Профил</string>
+    <string name="settings">Поставки</string>
 
     <string name="open">Отвори Навигација</string>
     <string name="close">Затвори Навигација</string>

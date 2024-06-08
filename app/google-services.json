@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92347601593",
+    "project_id": "woofwoofbitola",
+    "storage_bucket": "woofwoofbitola.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92347601593:android:6172cde45696ab042d8168",
+        "android_client_info": {
+          "package_name": "com.example.woofwoofbitola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92347601593-ajs6rad03od2rla2g1pr0j4p9d5mgkns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR1Hn77HyBhEFBoAX4-fFI97saMhbyI2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92347601593-ajs6rad03od2rla2g1pr0j4p9d5mgkns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

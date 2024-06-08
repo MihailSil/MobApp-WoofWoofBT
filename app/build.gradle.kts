@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     id("com.google.devtools.ksp")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -33,6 +34,7 @@ android {
 dependencies {
 
     implementation(libs.room.common)
+    implementation(libs.firebase.auth)
     val room_version = "2.5.0"
 
     implementation ("androidx.room:room-runtime:$room_version")

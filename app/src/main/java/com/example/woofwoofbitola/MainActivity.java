@@ -72,8 +72,14 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.login) {
                     Toast.makeText(MainActivity.this, "Login Selected", Toast.LENGTH_SHORT).show();
+                    openLogin();
                 } else if (item.getItemId() == R.id.register) {
                     Toast.makeText(MainActivity.this, "Register Selected", Toast.LENGTH_SHORT).show();
+                    openRegister();
+                } else if (item.getItemId() == R.id.logout) {
+                    Toast.makeText(MainActivity.this, "You are logged out", Toast.LENGTH_SHORT).show();
+                    Logout.performLogout(MainActivity.this);
+                    return true;
                 } else if (item.getItemId() == R.id.mkd){
                     setLocale("mk");
                     Toast.makeText(MainActivity.this, "Macedonian Selected", Toast.LENGTH_SHORT).show();
@@ -97,6 +103,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivityAllDogs(){
         Intent intent = new Intent(this, ActivityAllDogs.class);
+        startActivity(intent);
+    }
+
+    public void openLogin(){
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
+    public void openRegister(){
+        Intent intent = new Intent(this, Register.class);
         startActivity(intent);
     }
 
