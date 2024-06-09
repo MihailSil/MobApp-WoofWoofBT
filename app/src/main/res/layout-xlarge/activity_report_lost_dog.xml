@@ -18,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:textStyle="bold"
-            android:textSize="24sp"
+            android:textSize="48sp"
             android:textColor="@color/black"
             android:text="@string/button_report_lost_dog"/>
 
@@ -27,14 +27,14 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="200dp"
             android:layout_centerHorizontal="true"
             android:hint="@string/breed">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/breed"
-                android:textSize="20sp"
-                android:layout_width="300dp"
+                android:textSize="40sp"
+                android:layout_width="488dp"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:maxLines="1" />
@@ -46,14 +46,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/breedlayout"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_centerHorizontal="true"
             android:hint="@string/details">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/details"
-                android:textSize="20sp"
-                android:layout_width="300dp"
+                android:textSize="40sp"
+                android:layout_width="488dp"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:maxLines="1" />
@@ -61,11 +61,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSubmit"
-            android:textSize="20sp"
+            android:textSize="40sp"
             android:layout_below="@id/detailslayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_centerHorizontal="true"
             android:paddingBottom="10dp"
             android:text="@string/submit" />
