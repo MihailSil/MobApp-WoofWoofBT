@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<ScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -20,32 +20,22 @@
             android:layout_height="wrap_content"
             tools:context=".MainActivity">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditText"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="16dp"
-                android:hint="Search..."
+
+            <Button
+                android:id="@+id/button1"
+                android:textSize="20sp"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/button_view_all_dogs"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button1"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="68dp"
-                android:text="@string/button_view_all_dogs"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
-
-            <Button
                 android:id="@+id/button2"
-                android:layout_width="250dp"
+                android:textSize="20sp"
+                android:layout_width="320dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:text="@string/button_report_unchipped_dogs"
@@ -53,43 +43,38 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button1" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="40dp"
-                android:text="@string/button_lost_dogs"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button2" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="250dp"
+                android:textSize="20sp"
+                android:layout_width="320dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:text="@string/button_report_lost_dog"
                 app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button3" />
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
+            <ImageView
+                android:id="@+id/imageViewPaw"
                 android:layout_marginTop="40dp"
-                android:text="@string/button_donate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button4" />
+                app:layout_constraintTop_toBottomOf="@+id/button4"
+                android:contentDescription="@string/paw"
+                app:srcCompat="@drawable/dogpaw" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+    </ScrollView>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:paddingTop="40dp"
         android:layout_gravity="start"
         app:menu="@menu/main_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>

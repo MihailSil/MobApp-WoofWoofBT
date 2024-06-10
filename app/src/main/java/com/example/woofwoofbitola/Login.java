@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -30,7 +27,7 @@ public class Login extends AppCompatActivity {
     TextInputEditText editTextEmail, editTextPassword;
     Button buttonLogin;
     FirebaseAuth mAuth;
-    ImageView btnGoogle;
+
 
     @Override
     public void onStart() {
@@ -50,17 +47,10 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mAuth = FirebaseAuth.getInstance();
+
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.button_login);
-        btnGoogle = findViewById(R.id.button_google);
-
-        // ZA GOOGLE TREBA DA SE DOPRAJ
-        btnGoogle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override

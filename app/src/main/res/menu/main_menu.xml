@@ -18,11 +18,9 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item android:id="@+id/mkd"
-                    android:title="@string/mkd"
-                    />
+                    android:title="@string/mkd" />
                 <item android:id="@+id/eng"
-                    android:title="@string/eng"
-                    />
+                    android:title="@string/eng" />
             </group>
         </menu>
     </item>
